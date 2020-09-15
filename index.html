@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Checkout</h1>
+    <div class="main-container" >
+        <div class="info-container">
+            <h3>Contact Information</h3>
+        
+            <label for="email"><i class="material-icons">email</i>Email</label><br><input type="email" name="email" id="email" placeholder="Enter your email..."><br>
+        
+            <label for="phone"><i class="material-icons">phone</i>Phone</label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone...">
+            <h3 id="shipping">Shipping Adress</h3>
+        
+            <label for="name"><i class="fa fa-user icon"></i>Full name <br><input type="text" name="name" id="name" placeholder="Enter your full name..."></label><br>
+        
+            <label for="adress"><i class="fa fa-home"></i>Adress <br><input type="text" name="adress" id="adress" placeholder="Enter your adress..."></label><br>
+        
+            <label for="city"><i class="material-icons">location_city</i>City <br><input type="text" name="city" id="city" placeholder="Enter your city..."></label><br> <br><i class="material-icons">public</i>
+        
+            <div class="info-country">
+                <div class="country">
+                    <label for="country" id="country-label">Country</label><br>
+                    <select name="country" id="country">
+                        <option value="turkey" selected class="options">Turkey</option>
+                        <option value="germany" class="options">Germany</option>
+                        <option value="canada" class="options">Canada</option>
+                        <option value="usa" class="options">USA</option>
+                        <option value="uk" class="options">UK</option>
+                    </select>
+                </div>
+        
+        
+                <div class="postcode">
+                    <label for="postcode" id="post-label"><i class="material-icons">contact_mail</i>Post Code
+                    </label><br><input type="number" name="postcode" id="postcode" placeholder="Enter your postcode...">
+                </div>
+            
+            </div>
+            <input type="checkbox" name="info-next" id="info-next"> See this information next time   
+            <br>
+        
+
+        </div>
+        
+
+        <div class="check-container">
+            <div class="bag">
+                
+                    <img src="./IMG/photo1.png" alt="vintage-backbag">
+                    <p>Vintage Backbag <br><span class="new-price">$54.99</span> <del> <span class="old-price">$94.99</span></del></p>
+                            
+                <div class="check-sum">
+                    <div class="counter">&#8722;</div>
+                    <div class="number">1</div> 
+                    <div class="counter">&#x2b;</div>
+                </div>
+            </div>
+            <div class="shoes">
+                <img src="./IMG/photo2.png" alt="levi-shoes">
+                <p>Levi Shoes <br> <span class="new-price">$74.99</span> <del><span class="old-price">$124.99</span></del></p>
+                <div class="check-sum">
+                    <div class="counter">&#8722;</div>
+                    <div class="number">1</div> 
+                    <div class="counter">&#x2b;</div>
+                    
+                </div>
+            </div>
+            <hr>
+
+            <div class="check-shipping">
+                <p>Shipping</p>
+                <p>$19</p>
+            </div>
+            <hr>
+            <div class="check-total">
+                <p>Total</p>
+                <p>$148.98</p>
+            </div>        
+        </div>
+        <input type="submit" value="Continue" id="submit">
+
+    </div>
+    
+    
+    
+</body>
+</html>
