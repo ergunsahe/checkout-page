@@ -19,20 +19,20 @@ body {
 }
 h1 {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
     font-weight: lighter;
     font-size: 40px;
 }
 .info-container {
-    /* float: left; */
-    margin: 5% 0% 5% 5%;
+    
+    margin: 3% 0% 1% 10%;
     width: 50vw;
     
 }
 
 .check-container {
-    /* float: right; */
-    margin: 5% 5% 5% 0%;
+    
+    margin: 3% 10% 0% 0%;
 }
 
 input {
@@ -42,6 +42,7 @@ input {
     margin-top: 10px;
     border: 1px solid gray;
     border-radius: 4px;
+    padding-left: 30px;
   
 }
  label {
@@ -83,6 +84,7 @@ i {
     margin-right: 10px;
     border: 1px solid gray;
     border-radius: 4px;
+    padding-left: 30px;
 }
 .info-country {
     display: flex;
@@ -100,7 +102,7 @@ i {
 }
 
 #submit {
-    width: 80px;
+    width: 90px;
     height: 45px;
     border: 0px solid;
     border-radius: 10px;
@@ -108,6 +110,7 @@ i {
     color: white;
     margin-right: 10vw;
     margin-left: 35vw;
+    padding-left: 5px;
     
   
     
@@ -126,14 +129,15 @@ i {
     border: 0px gray;
     border-radius: 10px;
     width: 400px;
-    height: 500px;
+    height: 450px;
     background-color: rgba(179, 169, 169, 0.2);
     margin-right: 0vw;
-    margin-left: 3vw;
+    
 }
 
 .bag {
     display: grid;
+    grid-gap:0px
    
 }
 
@@ -161,7 +165,8 @@ p {
     grid-area:1/2/2/3;
     width: 100%;
     font-size: 16px;
-    margin: 10px;
+    margin: 35px 70px 0px 10px;
+    font-weight:550 ;
 }
 
 .check-shipping {
@@ -173,7 +178,11 @@ p {
 .check-total {
     display: flex;
     justify-content: space-between;
-    width: 440px;
+    width: 470px;
+}
+
+.check-shipping>p, .check-total>p {
+    margin-top: 15px;
 }
 hr {
     width: 300px;
@@ -187,8 +196,9 @@ hr {
     grid-area: check-sum;
     border: 1px solid gray;
     border-radius: 5px;
-    /* vertical-align: baseline; */
+    margin-left: 15px;
 }
+
 .counter {
     background-color: rgba(179, 169, 169, 0.4);
     border-radius: 4px;
@@ -199,8 +209,12 @@ hr {
     margin-right: 5px;
     margin-left: 5px;
     margin-top: 5px;
-    padding: 5px;
+    padding: 6px;
    
+}
+
+.counter:hover {
+    cursor: pointer;
 }
 
 .number {
@@ -210,10 +224,14 @@ hr {
     margin-top: 5px;
     padding: 5px;
 }
+*:focus {
+    outline: none;
+}
 
 @media (max-width:1000px) {
     .main-container {
     display: block;
+    
     }
 
     #submit {
