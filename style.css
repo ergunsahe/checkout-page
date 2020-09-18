@@ -225,6 +225,7 @@ hr {
 @media (max-width:1000px) {
     .main-container {
         flex-wrap: wrap-reverse;
+        margin-left: 150px;
     
     
     }
